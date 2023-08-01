@@ -30,9 +30,6 @@ button:hover {
     color: #585454;
     cursor: pointer;
 }
-h3 {
-    font-weight: normal;
-}
 .fixed {
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -60,7 +57,7 @@ h3 {
 }
 #view_main {
     width: 100vw;
-    height: 1500px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
 }
@@ -144,79 +141,8 @@ h3 {
 }
 #view_section {
     width: 100%;
-    height: 1500px;
+    height: 1000px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-}
-#view_section div {
-    width: 80vw;
-    text-align: center;
-}
-#view_section span {
-    font-size: 30px;
-}
-#view_section form {
-    margin-top: 50px;
-    width: 40vw;
-    margin-left: 20vw;
-    height: 500px;
-    background-color: #faa916;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    box-shadow: 8px 8px 6px -6px black;
-}
-#view_section form label {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 40vw;
-    border: none;
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
-#view_section form label:nth-child(1) {
-    margin-top: 50px;
-}
-#view_section form label:nth-last-child(1) {
-    margin-bottom: 50px;
-}
-#view_section form label input[type="text"] {
-    width: 30vw;
-    border-bottom: 2px solid #585454;
-    border-left: 2px solid black;
-    border-top: none;
-    border-right: none;
-}
-#view_section form label textarea {
-    width: 30vw;
-    height: 100px;
-    border-bottom: 2px solid #585454;
-    border-left: 2px solid black;
-    border-top: none;
-    border-right: none;
-}
-#view_section form label input[type="button"] {
-    margin-left: 10vw;
-    width: 10vw;
-    height: 3vw;
-    border: none;
-    background-color: #585454;
-    color: white;
-    transition-duration: 1s;
-    
-}
-#view_section form label input[type="button"]:hover {
-    margin-left: 9vw;
-    width: 12vw;
-    height: 3.5vw;
-    background-color: black;
-    color: white;
-    cursor: pointer;
 }
 #view_footer {
     /*position: fixed;*/
@@ -281,30 +207,6 @@ h3 {
     b {
         font-size: large;
     }
-    #view_section form {
-        width: 60vw;
-        margin-left: 10vw;
-    }
-    #view_section form label {
-        width: 60vw;
-    }
-    #view_section form label input[type="text"] {
-        width: 50vw;
-    }
-    #view_section form label textarea {
-        width: 50vw;
-    }
-    #view_section form label input[type="button"] {
-        margin-left: 17vw;
-        width: 15vw;
-        height: 4vw;
-        
-    }
-    #view_section form label input[type="button"]:hover {
-        margin-left: 16vw;
-        width: 17vw;
-        height: 5vw;
-    }
     @media (max-width: 768px){
         #view_header div:nth-child(1) aside{
             text-indent: -9999px;  
@@ -314,35 +216,6 @@ h3 {
         }
     }
     @media (min-width: 653px){
-    }
-}
-@media (max-width: 600px){
-    #view_main {
-        height: 1600px;
-    }
-    #view_section form {
-        width: 80vw;
-        height: 600px;
-        margin-left: 0vw;
-    }
-    #view_section form label {
-        width: 80vw;
-    }
-    #view_section form label input[type="text"] {
-        width: 70vw;
-    }
-    #view_section form label textarea {
-        width: 70vw;
-    }
-    #view_section form label input[type="button"] {
-        margin-left: 25vw;
-        width: 100px;
-        height: 40px;
-    }
-    #view_section form label input[type="button"]:hover {
-        margin-left: 20vw;
-        width: 120px;
-        height: 50px;
     }
 }
 @media (max-width: 450px) {
@@ -376,16 +249,5 @@ h3 {
         font-size: 11px;
     }
     @media (min-width: 350px) {
-    }
-}
-@media (max-width: 350px) {
-    #view_section form label input[type="button"] {
-        margin-left: 20vw;
-        width: 100px;
-        height: 40px;
-    }
-    #view_section form label input[type="button"]:hover {
-        width: 120px;
-        height: 50px;
     }
 }

@@ -1,0 +1,100 @@
+<div class="wp-block-template-part">
+<div style="height:0;" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-group has-global-padding is-layout-constrained" style="margin-top:var(--wp--preset--spacing--70)">
+	
+	<hr class="wp-block-separator alignwide has-css-opacity is-style-wide">
+	
+
+	
+	<div class="wp-block-columns alignwide has-small-font-size is-layout-flex wp-container-14" style="margin-top:var(--wp--preset--spacing--30)">
+		
+		<div class="wp-block-column is-layout-flow wp-container-11">
+			
+			<div class="wp-block-group is-layout-flex wp-container-9">
+				
+				<p>
+					Opublikowano				</p>
+				
+
+				<div class="wp-block-post-date"><time datetime="2023-07-24T14:12:59+02:00">2023-07-24</time></div>
+
+				
+				<p>
+					w				</p>
+				
+
+				<div class="taxonomy-category wp-block-post-terms"><a href="./../../../../category/pies/index.html" rel="tag">pies</a></div>
+			</div>
+			
+
+			
+			<div class="wp-block-group is-layout-flex wp-container-10">
+				
+				<p>
+					przez				</p>
+				
+
+				<div class="wp-block-post-author"><div class="wp-block-post-author__content"><p class="wp-block-post-author__name">root</p></div></div>
+			</div>
+			
+		</div>
+		
+
+		
+		<div class="wp-block-column is-layout-flow wp-container-13">
+			
+			<div class="wp-block-group is-vertical is-layout-flex wp-container-12">
+				
+				<p>
+					Tagi:				</p>
+				
+
+				<div class="taxonomy-post_tag wp-block-post-terms">
+<a href="./../../../../tag/pies/index.html" rel="tag">pies</a><span class="wp-block-post-terms__separator">, </span><a href="./../../../../tag/wiek/index.html" rel="tag">wiek</a>
+</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+
+</div>
+	<section class="wp-block-template-part">
+<div class="wp-block-group has-global-padding is-layout-constrained" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+	
+	<div class="wp-block-comments">
+		
+		<h2 class="wp-block-heading">Komentarze</h2>
+		
+
+		
+
+		
+
+		
+
+		<div id="respond" class="comment-respond wp-block-post-comments-form">
+		<h3 id="reply-title" class="comment-reply-title">Dodaj komentarz <small><a rel="nofollow" id="cancel-comment-reply-link" href="./index.html#respond" style="display:none;">Anuluj pisanie odpowiedzi</a></small>
+</h3>
+<form action="http://localhost/wordpress/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+<p class="comment-notes"><span id="email-notes">Twój adres e-mail nie zostanie opublikowany.</span> <span class="required-field-message">Wymagane pola są oznaczone <span class="required">*</span></span></p>
+<p class="comment-form-comment"><label for="comment">Komentarz <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p>
+<p class="comment-form-author"><label for="author">Nazwa <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required></p>
+<p class="comment-form-email"><label for="email">E-mail <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required></p>
+<p class="comment-form-url"><label for="url">Witryna internetowa</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url"></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Zapisz moje dane, adres e-mail i witrynę w przeglądarce aby wypełnić dane podczas pisania kolejnych komentarzy.</label></p>
+<p class="form-submit wp-block-button"><input name="submit" type="submit" id="submit" class="wp-block-button__link wp-element-button" value="Opublikuj komentarz"> <input type="hidden" name="comment_post_ID" value="19" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+</form>	</div>
+<!-- #respond -->
+	
+	</div>
+	
+</div>

@@ -8,6 +8,7 @@ body {
 a {
     color: black;
     transition-duration: 0.7s;
+    cursor: pointer;
 }
 a:hover {
     color: #585454;
@@ -20,11 +21,13 @@ button {
     border-radius: 5px;
     box-shadow: 2px 8px 8px -6px black;
     transition-duration: 0.7s;
+    cursor: pointer;
 }
 button:hover {
     width: 120px;
     height: 48px;
     color: #585454;
+    cursor: pointer;
 }
 .fixed {
     background-attachment: fixed;
@@ -396,6 +399,10 @@ button:hover {
     #view_footer header {
         display: flex;
         justify-content: space-around;
+        
+    }
+    #view_footer header div p {
+        font-size: 11px;
     }
     @media (min-width: 350px) {
         #view_section {
