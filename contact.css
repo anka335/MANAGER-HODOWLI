@@ -312,6 +312,40 @@ h3 {
         #view_header div:nth-child(2) div{
             text-indent: -9999px;  
         }
+        #view_footer {
+            height: 300px;
+        }
+        #view_footer section{
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #view_footer section div:nth-child(1){
+            width: 48vw;
+            height: 50px;
+            border: none;
+        }
+        #view_footer section div:nth-child(2){
+            width: 48vw;
+            height: 50px;
+            border: none;
+        }
+        #view_footer section div:nth-child(3){
+            width: 30vw;
+            height: 50px;
+            border: none;
+        }
+        #view_footer section div:nth-child(4){
+            width: 30vw;
+            height: 50px;
+            border: none;
+        }
+        #view_footer section div:nth-child(5){
+            width: 30vw;
+            height: 50px;
+            border: none;
+        }
     }
     @media (min-width: 653px){
     }

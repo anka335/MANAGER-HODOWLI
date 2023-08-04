@@ -296,6 +296,9 @@ button:hover {
     * {
         font-size: small;
     }
+    a {
+        font-size: small;
+    }
     aside {
         width: 100vw;
     }
@@ -345,10 +348,55 @@ button:hover {
         #view_header div:nth-child(2) div{
             text-indent: -9999px;  
         }
+        #view_footer {
+            height: 300px;
+        }
+        #view_footer hr {
+            border: 0;
+            clear:both;
+            display:block;
+            width: 96%;               
+            background-color:black;
+            height: 1px;
+        }
+        #view_footer section{
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #view_footer section div:nth-child(1){
+            width: 48vw;
+            height: 50px;
+            border: none;
+        }
+        #view_footer section div:nth-child(2){
+            width: 48vw;
+            height: 50px;
+            border: none;
+        }
+        #view_footer section div:nth-child(3){
+            width: 30vw;
+            height: 50px;
+            border: none;
+        }
+        #view_footer section div:nth-child(4){
+            width: 30vw;
+            height: 50px;
+            border: none;
+        }
+        #view_footer section div:nth-child(5){
+            width: 30vw;
+            height: 50px;
+            border: none;
+        }
     }
     @media (min-width: 653px){
+        #view_main {
+            height: 2200px;
+        }
         #view_section {
-            height: 2500px;
+            height: 2700px;
         }
         #view_section div:nth-child(5) {
             padding-left: 0;
@@ -361,6 +409,9 @@ button:hover {
     }
 }
 @media (max-width: 450px) {
+    #view_main {
+        height: 2200px;
+    }
     #view_header div:nth-child(1) aside{
         display: none;  
     }
@@ -381,7 +432,7 @@ button:hover {
         display: inherit;
     }
     #view_section {
-        height: 3000px;
+        height: 3300px;
     }
     #view_section_image {
         height: 650px;
@@ -405,8 +456,11 @@ button:hover {
         font-size: 11px;
     }
     @media (min-width: 350px) {
+        #view_main {
+            height: 2200px;
+        }
         #view_section {
-            height: 3000px;
+            height: 3300px;
         }
         #view_section div:nth-child(5) {
             padding-left: 0;
