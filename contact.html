@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="contact.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
@@ -35,13 +36,31 @@
                 <img src="./images/line2.png" style="width: 100vw; margin-top: 50px; margin-bottom: 50px;">
                 <div>
                     <span>Napisz do nas</span>
-                    <form>
-                        <label>Imię:<input type="text"></label>
+                    <form onsubmit="Send()">
+                        <label>Email:<input type="text" id="email"></label>
                         <label>Nazwisko:<input type="text"></label>
-                        <label>Temat:<input type="text"></label>
-                        <label>Wiadomość:<textarea></textarea></label>
-                        <label><input type="button" value="Wyślij"></label>
+                        <label>Temat:<input type="text" id="subject"></label>
+                        <label>Wiadomość:<textarea id="message"></textarea></label>
+                        <label><input type="submit" value="Wyślij"></label>
                     </form>
+                    <script>
+                        function Send(){
+                            console.log("AAAAAAAAAA");
+                            Email.send({
+                                Host : "smtp.gmail.com",
+                                Username : "joannazubik777@gmail.com",
+                                Password : "password",
+                                To : 'joasiazubik@gmail.com',
+                                From : document.getElementById("email").value,
+                                Subject : document.getElementById("subject").value,
+                                Body : document.getElementById("message").value
+                            }).then(
+                                message => alert(message)
+                            ).catch(
+                                error => console.log("Wystąpił błąd:", error)
+                            );
+                        }
+                    </script>
                 </div>
             </section>
             <footer id="view_footer">

@@ -200,7 +200,7 @@ h3 {
     border-top: none;
     border-right: none;
 }
-#view_section form label input[type="button"] {
+#view_section form label input[type="submit"] {
     margin-left: 10vw;
     width: 10vw;
     height: 3vw;
@@ -210,7 +210,7 @@ h3 {
     transition-duration: 1s;
     
 }
-#view_section form label input[type="button"]:hover {
+#view_section form label input[type="submit"]:hover {
     margin-left: 9vw;
     width: 12vw;
     height: 3.5vw;
@@ -294,13 +294,13 @@ h3 {
     #view_section form label textarea {
         width: 50vw;
     }
-    #view_section form label input[type="button"] {
+    #view_section form label input[type="submit"] {
         margin-left: 17vw;
         width: 15vw;
         height: 4vw;
         
     }
-    #view_section form label input[type="button"]:hover {
+    #view_section form label input[type="submit"]:hover {
         margin-left: 16vw;
         width: 17vw;
         height: 5vw;
@@ -318,11 +318,11 @@ h3 {
 }
 @media (max-width: 600px){
     #view_main {
-        height: 1600px;
+        height: 1400px;
     }
     #view_section form {
         width: 80vw;
-        height: 600px;
+        height: 400px;
         margin-left: 0vw;
     }
     #view_section form label {
@@ -334,12 +334,13 @@ h3 {
     #view_section form label textarea {
         width: 70vw;
     }
-    #view_section form label input[type="button"] {
-        margin-left: 25vw;
-        width: 100px;
+    #view_section form label input[type="submit"] {
+        margin-left: 20vw;
+        width: 30vw;
         height: 40px;
+        margin-top: 10px;
     }
-    #view_section form label input[type="button"]:hover {
+    #view_section form label input[type="submit"]:hover {
         margin-left: 20vw;
         width: 120px;
         height: 50px;
@@ -379,12 +380,12 @@ h3 {
     }
 }
 @media (max-width: 350px) {
-    #view_section form label input[type="button"] {
+    #view_section form label input[type="submit"] {
         margin-left: 20vw;
         width: 100px;
         height: 40px;
     }
-    #view_section form label input[type="button"]:hover {
+    #view_section form label input[type="submit"]:hover {
         width: 120px;
         height: 50px;
     }
