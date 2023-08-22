@@ -1,0 +1,158 @@
+    
+    /* Styling the area of the slides */
+    #slideshow {
+    overflow: hidden;
+    height: 70vh;
+    width: 100vw;
+    margin: 0 auto;
+    }
+    
+    /* Style each of the sides
+    with a fixed width and height */
+    .slide {
+    float: left;
+    height: 70vh;
+    width: 100vw;
+    object-fit: fill;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    
+    /* Add animation to the slides */
+    .slide-wrapper {
+    
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(100vw * 4);
+    
+    /* Specify the animation with the
+    duration and speed */
+    /*animation: slide 20s ease infinite;*/
+    }
+
+    #slide_buttons {
+        display: block;
+        position: absolute;
+        width: 10vw;
+        margin-left: 45vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 60vh;
+    }
+
+    #slide_buttons input {
+    }
+    
+    /* Set the background color
+    of each of the slides */
+    .slide:nth-child(1) div {
+        width: 65vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 20px;
+        padding-left: 30px;
+    }
+    
+    .slide:nth-child(2) div{
+        width: 30vw;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        font-size: 20px;
+        padding-left: 30px;
+        /*background-color: rgba(250, 169, 22, .25);*/
+    }
+
+    .slide:nth-child(2) div p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .slide:nth-child(3) {
+    }
+    
+    .slide:nth-child(4) {
+    }
+    
+    /* css for slide navigation */
+    .navigation {
+        position: absolute;
+        width: 800px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-btn {
+        border: 2px solid #de6a23;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .navigation-btn:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .navigation-btn:hover {
+        background: #de6a23;
+    }
+
+    /* Define the animation
+    for the slideshow */
+    /*@keyframes slide {
+    
+    /* Calculate the margin-left for
+    each of the slides 
+    20% {
+        margin-left: 0px;
+    }
+    
+    40% {
+        margin-left: calc(-100vw * 1);
+    }
+    
+    60% {
+        margin-left: calc(-100vw * 2);
+    }
+    
+    80% {
+        margin-left: calc(-100vw * 3);
+    }
+    }*/
+
+    .active {
+        border-color: #666;
+    }
+     
+    /* Animation */
+    .fade {
+        -webkit-animation-name: fade-image;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade-image;
+        animation-duration: 1.5s;
+    }
+     
+    @-webkit-keyframes fade-image {
+        from {
+            opacity: 0.4;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+     
+    @keyframes fade-image {
+        from {
+            opacity: 0.4;
+        }
+        to {
+            opacity: 1;
+        }
+    }

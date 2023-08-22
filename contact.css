@@ -61,7 +61,7 @@ h3 {
 }
 #view_main {
     width: 100vw;
-    height: 1400px;
+    height: 1200px;
     display: flex;
     flex-direction: column;
 }
@@ -71,6 +71,15 @@ h3 {
     background-color: #faa916;
     box-shadow: 0px 8px 6px -6px black;
     position: relative; /* Dodaj tę linijkę */
+}
+#view_header::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    z-index: 1;
 }
 #view_header div:nth-child(1){
     width: 100%;
@@ -145,7 +154,7 @@ h3 {
 }
 #view_section {
     width: 100%;
-    height: 1500px;
+    height: 1200px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -227,54 +236,14 @@ h3 {
     left: 0;
     bottom: 0;
     width: 100vw;
-    height: 230px;
+    height: 10vh;
     background-color: #faa916;
     display: flex;
-    flex-direction: column;
-    bottom: 0;
-}
-#view_footer header {
-    width: 100%;
-    height: 160px;
-    display: flex;
-}
-#view_footer header div{
-    width: 33.33333%;
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#view_footer img {
-    width: 20px;
-    height: 20px;
-    padding-right: 5px;
-}
-#view_footer section{
-    width: 100%;
-    height: 70px;
-    display: flex;
-}
-#view_footer section div{
-    width: 20vw;
-    height: 60px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    border-right: 2px solid black;
+    align-items: center;
+    align-self: flex-end;
 }
-#view_footer section div:nth-child(5){
-    border: none;
-}
-#view_header::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    z-index: 1;
-}
+
 @media (max-width: 900px) { /*768*/
     * {
         font-size: small;

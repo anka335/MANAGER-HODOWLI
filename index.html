@@ -2,7 +2,9 @@
     <head>
         <title>Manager Hodowli</title>
         <link rel="icon" href="./images/metalic-logo.png">
-        <link rel="stylesheet" href="mainview.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="slideshow.css">
+        <script src="slideshow.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
@@ -14,19 +16,48 @@
             <header id="view_header">
                 <div><img src="./images/metalic-logo.png"><div>MANAGER HODOWLI</div><aside><img src="images/facebook.svg">nasz profil</aside></div>
                 <div>
-                    <div style="position: relative;"><img src="./images/home.png"><a href="./mainview.html"><span></span></a>start</div>
-                    <div style="position: relative;"><img src="./images/test-pet.svg"><a href="./animals.html"><span></span></a>nasi podopieczni</div>
-                    <div style="position: relative;"><img src="./images/book.png"><a href="./articles.html"><span></span></a>nasze hodowle</div>
+                    <div style="position: relative;"><img src="./images/home.png"><a href="./index.html"><span></span></a>start</div>
+                    <div style="position: relative;"><img src="./images/test-pet.svg"><a href="./guestsanimals.html"><span></span></a>nasi podopieczni</div>
+                    <div style="position: relative;"><img src="./images/test-pet.svg"><a href="./ouranimals.html"><span></span></a>nasze hodowle</div>
                     <div style="position: relative;"><img src="./images/phone.png"><a href="./contact.html"><span></span></a>kontakt</div>
                     <div><img src="./images/facebook.svg"></div>
                 </div>
             </header>
             <section id="view_section">
-                <div id="view_section_image" class="fixed">
-                    <div>
-                        <span><b>Kompleksowa opieka ciążowa dla suk</b></span>
-                        Oferujemy profesjonalną, popartą latami doświadczeń pomoc w prowadzeniu ciąży u suk - od wywoływania rui, przez cytologię (określenie optymalnego czasu na zapłodnienie a nawet potencjalny wpływ na płeć i liczbę szczeniąt w miocie), po inseminację , poród, laktację 
-                        <a href="./contact.html"><button style="margin-left: 10vw; margin-top: 10px; font-size: medium;">kontakt</button></a>
+                <div id="slideshow">
+                    <span id="slide_buttons">
+                        <!-- <input type="radio" name="slide" onclick="currentSlide(0)" class="dot"> -->
+                        <input type="radio" name="slide" class="dot">
+                        <input type="radio" name="slide" class="dot">
+                        <input type="radio" name="slide" class="dot">
+                        <input type="radio" name="slide" class="dot">
+                    </span>
+                    <div class="slide-wrapper">
+                        <div class="slide" style="background-image: url(./images/pieski1/a3.jpg) ;">
+                            <div>
+                                <span><b>Kompleksowa opieka ciążowa dla suk</b></span>
+                                Oferujemy profesjonalną, popartą latami doświadczeń pomoc w prowadzeniu ciąży u suk - od wywoływania rui, przez cytologię (określenie optymalnego czasu na zapłodnienie a nawet potencjalny wpływ na płeć i liczbę szczeniąt w miocie), po inseminację, poród, laktację 
+                                <a href="./contact.html"><button style="margin-left: 10vw; margin-top: 10px; font-size: medium;">kontakt</button></a>
+                            </div>
+                        </div>
+                        <div class="slide" style="background-image: url(./images/pieski1/b1.jpg);">
+                            <div>
+                                <p>Służymy radą w utrzymaniu psa reproduktora w jak najlepszej kondycji.</p>
+                                <p>Pomożemy w znalezieniu i wyborze szczeniaka każdej rasy.</p>
+                                <p>Fachowe doradztwo i nadzór nad prawidłowym rozwojem szczeniąt - do ukończenia pierwszego roku zycia.</p>
+                            </div>
+                        </div>
+                        <div class="slide"  style="background-image: url(./images/pieski1/c1.jpg);">
+                            <h1 class="slide-number">
+                                This is an example of
+                            </h1>
+                        </div>
+                        <div class="slide" style="background-image: url(./images/szczeniaki1.jpg);">
+                            <h1 class="slide-number">
+                                Slideshow with HTML and CSS only
+                            </h1>
+                        </div>
+
                     </div>
                 </div>
                 <!--<div class="line"><img src="./images/line2.png" style="width: 100vw;"></div>
@@ -57,23 +88,7 @@
                 </div>-->
             </section>
             <footer id="view_footer">
-                <header>
-                    <div>
-                        <p>obserwuj</p>
-                       <aside><img src="./images/facebook.svg">nasz profil</aside>
-                    </div>
-                    <div>
-                        <p>kontakt</p>
-                        <p>managerhodowli@gmail.com</p>
-                    </div>
-                    <div>
-                        <p>patronat</p>
-                            <div style="width: 33vw">
-                            <p style="margin-bottom: 0">Gabinet Weterynaryjny Radosław Zieliński,</p>
-                            <p style="margin-top: 0">ul.Kościuszki 114, 62-030 Luboń</p>
-                        </div>
-                    </div>
-                </header>
+                <p>patronat - Gabinet Weterynaryjny Radosław Zieliński ul, Kościuszki 114, 62-030 Luboń</p>
             </footer>
         </main>
     </body>
