@@ -6,80 +6,25 @@ document.addEventListener('DOMContentLoaded', function() {
   let dots = document.getElementsByClassName("dot");
   dots = Array.from(dots);
 
-  dots[0].addEventListener("click", async function(){
-    allowShowSlides = false;
-    console.log("slide: 0");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[0].style.display = "block";
-    dots[0].className += " active";
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", async function () {
+      allowShowSlides = false;
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.width = "0vw";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[index].style.width = "100vw";
+      dots[index].className += " active";
+  
+      await new Promise(resolve => setTimeout(resolve, 10000));
+  
+        allowShowSlides = true;
+        showSlides();
+    });
+});
 
-    await new Promise(resolve => setTimeout(resolve, 10000));
-
-      allowShowSlides = true;
-      showSlides();
-  });
-
-  dots[1].addEventListener("click", async function(){
-    allowShowSlides = false;
-    console.log("slide: 1");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[1].style.display = "block";
-    dots[1].className += " active";
-
-    await new Promise(resolve => setTimeout(resolve, 10000));
-
-    slideIndex = 1;
-    allowShowSlides = true;
-    showSlides();
-  });
-
-  dots[2].addEventListener("click", async function(){
-    allowShowSlides = false;
-    console.log("slide: 2");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[2].style.display = "block";
-    dots[2].className += " active";
-
-    await new Promise(resolve => setTimeout(resolve, 10000));
-
-    slideIndex = 2;
-    allowShowSlides = true;
-    showSlides();
-  });
-
-  dots[3].addEventListener("click", async function(){
-    allowShowSlides = false;
-    console.log("slide: 3");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[3].style.display = "block";
-    dots[3].className += " active";
-
-    await new Promise(resolve => setTimeout(resolve, 8000));
-
-    slideIndex = 3;
-    allowShowSlides = true;
-    showSlides();
-  });
 
   showSlides(); // call showslide method
 
@@ -87,12 +32,13 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!allowShowSlides) {
       return;
     }
+    console.log("siup");
     let i;
 
     for (i = 0; i < slides.length; i++) {
       // initially set the display to
       // none for every image.
-      slides[i].style.display = "none";
+      slides[i].style.width = "0vw";
     }
 
     // increase by 1, Global variable
@@ -107,10 +53,11 @@ document.addEventListener('DOMContentLoaded', function() {
       dots[i].className = dots[i].className.replace(" active", "");
     }
 
-    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.width = "100vw";
     dots[slideIndex - 1].className += " active";
 
     // Change image every 2 seconds
     setTimeout(showSlides, 4000);
   }
+  
 });

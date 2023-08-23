@@ -7,29 +7,24 @@
     margin: 0 auto;
     }
     
+    
     /* Style each of the sides
     with a fixed width and height */
     .slide {
-    float: left;
-    height: 70vh;
-    width: 100vw;
-    object-fit: fill;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+        float: left;
+        height: 70vh;
+        width: 100vw;
+        object-fit: fill;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        transition: 2s;
     }
     
     /* Add animation to the slides */
     .slide-wrapper {
-    
-    /* Calculate the total width on the
-    basis of number of slides */
-    width: calc(100vw * 4);
-    
-    /* Specify the animation with the
-    duration and speed */
-    /*animation: slide 20s ease infinite;*/
+        width: calc(100vw * 4);
     }
 
     #slide_buttons {
@@ -38,12 +33,31 @@
         width: 10vw;
         margin-left: 45vw;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         margin-top: 60vh;
     }
 
-    #slide_buttons input {
+    .dot {
+        width: 15px; 
+        height: 15px; 
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 0.7s;
     }
+
+    .dot:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        transition-duration: 0.7s;
+    }
+
+    .active {
+        background-color: black;
+        transition-duration: 0.7s;
+    }
+
     
     /* Set the background color
     of each of the slides */
@@ -103,45 +117,19 @@
     .navigation-btn:hover {
         background: #de6a23;
     }
-
-    /* Define the animation
-    for the slideshow */
-    /*@keyframes slide {
     
-    /* Calculate the margin-left for
-    each of the slides 
-    20% {
-        margin-left: 0px;
-    }
-    
-    40% {
-        margin-left: calc(-100vw * 1);
-    }
-    
-    60% {
-        margin-left: calc(-100vw * 2);
-    }
-    
-    80% {
-        margin-left: calc(-100vw * 3);
-    }
-    }*/
-
-    .active {
-        border-color: #666;
-    }
      
     /* Animation */
     .fade {
         -webkit-animation-name: fade-image;
-        -webkit-animation-duration: 1.5s;
+        -webkit-animation-duration: 3s;
         animation-name: fade-image;
-        animation-duration: 1.5s;
+        animation-duration: 3s;
     }
      
     @-webkit-keyframes fade-image {
         from {
-            opacity: 0.4;
+            opacity: 0.6;
         }
         to {
             opacity: 1;
