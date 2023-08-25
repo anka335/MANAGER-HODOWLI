@@ -29,6 +29,15 @@ button:hover {
     color: #585454;
     cursor: pointer;
 }
+.background-image {
+    width: 100vw;
+    height: 70vh;
+    -moz-background-size:100% auto;
+    -webkit-background-size:100% auto;
+    -webkit-background-position:0% auto;
+    background-size:100% auto;
+    -o-background-size: 100% auto;
+}
 .fixed {
     background-attachment: fixed;
     background-repeat: no-repeat;

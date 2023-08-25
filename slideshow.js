@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   slides = Array.from(slides);
   let dots = document.getElementsByClassName("dot");
   dots = Array.from(dots);
+  let isFunctionCalled = false;
 
   dots.forEach((dot, index) => {
     dot.addEventListener("click", async function () {
@@ -28,36 +29,46 @@ document.addEventListener('DOMContentLoaded', function() {
 
   showSlides(); // call showslide method
 
-  function showSlides() {
-    if (!allowShowSlides) {
+  async function showSlides() {
+    if (isFunctionCalled){
       return;
     }
-    console.log("siup");
-    let i;
 
-    for (i = 0; i < slides.length; i++) {
-      // initially set the display to
-      // none for every image.
-      slides[i].style.width = "0vw";
+    isFunctionCalled = true;
+
+    try {
+      if (!allowShowSlides) {
+        return;
+      }
+      console.log("siup");
+      let i;
+
+      for (i = 0; i < slides.length; i++) {
+        // initially set the display to
+        // none for every image.
+        slides[i].style.width = "0vw";
+      }
+
+      // increase by 1, Global variable
+      slideIndex++; //obecny slajd
+
+      // check for boundary
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[slideIndex - 1].style.width = "100vw";
+      dots[slideIndex - 1].className += " active";
+
+      await new Promise(resolve => setTimeout(resolve, 8000));
+    } finally {
+      isFunctionCalled = false;
+      showSlides();
     }
-
-    // increase by 1, Global variable
-    slideIndex++; //obecny slajd
-
-    // check for boundary
-    if (slideIndex > slides.length) {
-      slideIndex = 1;
-    }
-
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex - 1].style.width = "100vw";
-    dots[slideIndex - 1].className += " active";
-
-    // Change image every 2 seconds
-    setTimeout(showSlides, 4000);
   }
   
 });
