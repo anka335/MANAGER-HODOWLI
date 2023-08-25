@@ -30,7 +30,7 @@
     #slide_buttons {
         display: block;
         position: absolute;
-        width: 10vw;
+        width: 100px;
         margin-left: 45vw;
         display: flex;
         justify-content: space-between;
