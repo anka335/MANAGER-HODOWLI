@@ -47,10 +47,10 @@ body {
     display: block;
     position: absolute;
     width: 100px;
-    margin-left: 45vw;
+    margin-left: calc(50vw - 50px);
     display: flex;
     justify-content: space-between;
-    margin-top: 60vh;
+    margin-top: calc(100vh - 300px);
 }
 .dot {
     width: 15px; 
