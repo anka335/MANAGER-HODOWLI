@@ -79,19 +79,59 @@ body {
     font-size: 20px;
     padding-left: 30px;
 }
-.slide:nth-child(2) div div{
-    width: 30vw;
-    height: 40%;
+.slide:nth-child(2) {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    font-size: 20px;
-    padding-left: 30px;
-    /*background-color: rgba(250, 169, 22, .25);*/
+    justify-content: center;
+    height: 100%;
 }
-.slide:nth-child(2) div div p{
+.slide:nth-child(2) div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+#slide2_text_div {
+    height: 30vh;
+}
+.slide:nth-child(2) span {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    width: 43vw;
+    
+}
+.slide:nth-child(2) img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.slide:nth-child(2) h4 {
+    display: block;
+    width: 40vw;
     margin-top: 0;
-    margin-bottom: 0;
+    padding-left: 5px;
+}
+.slide:nth-child(3) div{
+    display: flex;
+    height: 100%;
+    width: 100vw;
+}
+.slide:nth-child(3) div div:nth-child(1){
+    width: 100vw;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.slide:nth-child(4) div {
+    display: flex;
+    flex-direction: column;
+}
+.slide:nth-child(4) div div {
+    width: 40vw;
+    height: 100%;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 .navigation {
     position: absolute;
