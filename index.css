@@ -192,47 +192,47 @@ body {
         background-size: cover;
         margin-bottom: 0;
     }
-}
-@media (min-height: 700px) {
-    .slide:nth-child(1) div{
-        background: url(./images/slajdy/t1.jpg);
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        
-        margin-bottom: 0;
-    }
-    .slide:nth-child(1) {
-        background-color: aqua;
-    }
-    .slide:nth-child(2) div{
-        background: url(./images/slajdy/8.png) 50% 50% no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        justify-content: flex-start;
-        padding-top: 5vh;
-    }
-    .slide:nth-child(3) div{
-        background: url(./images/slajdy/t2.jpg) 50% 50% no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-    .slide:nth-child(4) div{
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-    .slide:nth-child(4) div div {
-        width: 80vw;
-        height: 20vh;
-        padding-left: 30px;
-        padding-top: 30px;
-        background: transparent;
+    @media (min-height: 700px) {
+        .slide:nth-child(1) div{
+            background: url(./images/slajdy/t1.jpg);
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            
+            margin-bottom: 0;
+        }
+        .slide:nth-child(1) {
+            background-color: aqua;
+        }
+        .slide:nth-child(2) div{
+            background: url(./images/slajdy/8.png) 50% 50% no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            justify-content: flex-start;
+            padding-top: 5vh;
+        }
+        .slide:nth-child(3) div{
+            background: url(./images/slajdy/t2.jpg) 50% 50% no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .slide:nth-child(4) div{
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .slide:nth-child(4) div div {
+            width: 80vw;
+            height: 20vh;
+            padding-left: 30px;
+            padding-top: 30px;
+            background: transparent;
+        }
     }
 }
