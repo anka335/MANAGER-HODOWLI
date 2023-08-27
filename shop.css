@@ -1,0 +1,11 @@
+#view_main {
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+#view_section {
+    width: 100vw;
+    height: 1000px;
+}
