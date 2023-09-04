@@ -16,7 +16,7 @@ body {
 
 #view_section {
     width: 100vw;
-    height: calc(100vh - 220px);
+    height: calc(100vh - 180px);
     margin: 0;
     padding: 0;
     display: flex;
@@ -25,13 +25,13 @@ body {
 }
 #slideshow {
     overflow: hidden;
-    height: calc(100vh - 220px);
+    height: calc(100vh - 180px);
     width: 100vw;
     margin: 0 auto;
 }
 .slide {
     float: left;
-    height: calc(100vh - 220px);
+    height: calc(100vh - 180px);
     width: 100vw;
     object-fit: fill;
     -webkit-background-size: cover;
@@ -71,7 +71,7 @@ body {
     transition-duration: 0.7s;
 }
 .slide:nth-child(1) div{
-    height: calc(100vh - 220px);
+    height: calc(100vh - 180px);
     background: url(./images/slajdy/10.png) 50% 50% no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -98,7 +98,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - 220px);
+    height: calc(100vh - 180px);
     background: url(./images/slajdy/8.png) 70% 30% no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -129,7 +129,7 @@ body {
 }
 .slide:nth-child(3) div{
     display: flex;
-    height: calc(100vh - 220px);
+    height: calc(100vh - 180px);
     width: 100vw;
     background: url(./images/slajdy/12.png) 50% 50% no-repeat;
     -webkit-background-size: cover;
@@ -149,7 +149,7 @@ body {
 .slide:nth-child(4) div {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 220px);
+    height: calc(100vh - 180px);
     background: url(./images/slajdy/14.png) 50% 50% no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -201,9 +201,6 @@ body {
             background-size: cover;
             
             margin-bottom: 0;
-        }
-        .slide:nth-child(1) {
-            background-color: aqua;
         }
         .slide:nth-child(2) div{
             background: url(./images/slajdy/8.png) 50% 50% no-repeat;

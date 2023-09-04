@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!allowShowSlides) {
         return;
       }
-      console.log("siup");
       let i;
 
       for (i = 0; i < slides.length; i++) {
