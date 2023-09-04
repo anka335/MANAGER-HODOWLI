@@ -57,6 +57,13 @@ h3 {
     border-top: none;
     border-right: none;
 }
+#view_section form label input[type="email"] {
+    width: 30vw;
+    border-bottom: 2px solid #585454;
+    border-left: 2px solid black;
+    border-top: none;
+    border-right: none;
+}
 #view_section form label textarea {
     width: 30vw;
     height: 100px;
@@ -97,6 +104,9 @@ h3 {
     #view_section form label input[type="text"] {
         width: 50vw;
     }
+    #view_section form label input[type="email"] {
+        width: 50vw;
+    }
     #view_section form label textarea {
         width: 50vw;
     }
@@ -122,6 +132,9 @@ h3 {
         width: 80vw;
     }
     #view_section form label input[type="text"] {
+        width: 70vw;
+    }
+    #view_section form label input[type="email"] {
         width: 70vw;
     }
     #view_section form label textarea {

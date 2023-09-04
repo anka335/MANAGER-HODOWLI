@@ -56,7 +56,21 @@ button:hover {
     padding: 10px 20px;
     background-color: #EEEEEE;
 }
-
+.hidden {
+    display: none !important;
+}
+.not_hidden {
+    z-index: 2;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10vw;
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: auto;
+    height: auto;
+    background-color: white;
+}
 #view_header {
     width: 100%;
     height: 150px;
@@ -73,18 +87,18 @@ button:hover {
     height: 10px;
     z-index: 1;
 }
-#view_header div:nth-child(1){
+#view_header_div1{
     width: 100%;
     height: 70px;
     background-color: #faa916;
     display: flex;
 }
-#view_header div:nth-child(1) img{
+#view_header_div1 img{
     width: 70px;
     height: 70px;
     padding-left: 40px;
 }
-#view_header div:nth-child(1) div{
+#view_header_div1 div{
     flex-grow: 1;
     height: 70px;
     padding-left: 20px;
@@ -92,30 +106,30 @@ button:hover {
     background-color: #faa916;
     font-size: xx-large;
 }
-#view_header div:nth-child(1) aside{
+#view_header_div1 aside{
     width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition-duration: 0.7s;
 }
-#view_header div:nth-child(1) aside:hover{
+#view_header_div1 aside:hover{
     color: #585454;
     cursor: pointer;
 }
-#view_header div:nth-child(1) aside img{
+#view_header_div1 aside img{
     width: 20px;
     height: 20px;
     padding-right: 3px;
 }
-#view_header div:nth-child(2){
+#view_header_div2{
     width: 100vw;
     height: 50px;
     background-color:beige;
     display: flex;
 }
-#view_header div:nth-child(2) div{
-    width: 20vw;
+#view_header_div2 div{
+    width: 25vw;
     height: 50px;
     display: flex;
     background-color: #faa916;
@@ -123,7 +137,7 @@ button:hover {
     justify-content: center;
     transition-duration: 0.7s;
 }
-#view_header div:nth-child(2) div span {
+#view_header_div2 div span {
     position:absolute; 
     width:100%;
     height:100%;
@@ -131,12 +145,12 @@ button:hover {
     left: 0;
     z-index: 1;
 }
-#view_header div:nth-child(2) div img {
+#view_header_div2 div img {
     width: 20px;
     height: 20px;
     padding-right: 5px;
 }
-#view_header div:nth-child(2) div:hover{
+#view_header_div2 div:hover{
     background-color: #faa916;
     color:#585454;
     cursor: pointer;
@@ -172,32 +186,36 @@ button:hover {
         font-size: small;
     }
     @media (max-width: 768px){
-        #view_header div:nth-child(1) aside{
+        #view_header_div1 aside{
             text-indent: -9999px;  
         }
-        #view_header div:nth-child(2) div{
+        #view_header_div2 div{
             text-indent: -9999px;  
+        }
+        .hidden {
+            text-indent: 0;
+
         }
     }
     @media (min-width: 653px){
     }
 }
 @media (max-width: 450px) {
-    #view_header div:nth-child(1) aside{
+    #view_header_div1 aside{
         display: none;  
     }
-    #view_header div:nth-child(2){
+    #view_header_div2{
         display: flex;
         width: 100%;
     }
-    #view_header div:nth-child(2) div{
+    #view_header_div2 div{
         padding: 0;
         margin: 0;
     }
-    #view_header div:nth-child(2) div:nth-child(5) {
+    #view_header_div2 div:nth-child(5) {
         display: inherit;
     }
-    #view_header div:nth-child(2) div img {
+    #view_header_div2 div img {
         width: 15px;
         height: 15px;
         padding: 0;

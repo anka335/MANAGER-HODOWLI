@@ -1,6 +1,6 @@
 #view_main {
     width: 100vw;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -10,8 +10,9 @@
     height: auto;
     background-color: white;
     padding-bottom: 50px;
+    display: flex;
+    padding-bottom: 200px;
 }
-
 .main{
     margin: 20px;
     padding: 50px;
@@ -24,6 +25,7 @@ div.gallery {
     transition: 0.7s;
     float: left;
     width: 180px;
+    height: 320px;
     display: grid;
     box-shadow: 9px 9px 5px -6px;
 }

@@ -14,48 +14,30 @@
     <body>
         <main id="view_main">
             <header id="view_header">
-                <div><img src="./images/metalic-logo.png"><div>MANAGER HODOWLI</div><aside><img src="images/facebook.svg">nasz profil</aside></div>
-                <div>
-                    <div style="position: relative;"><img src="./images/home.png"><a href="./index.html"><span></span></a>start</div>
-                    <div style="position: relative;"><img src="./images/test-pet.svg"><a href="./guestsanimals.html"><span></span></a>nasi podopieczni</div>
-                    <div style="position: relative;"><img src="./images/test-pet.svg"><a href="./ouranimals.html"><span></span></a>nasze hodowle</div>
-                    <div style="position: relative;"><img src="./images/phone.png"><a href="./contact.html"><span></span></a>kontakt</div>
-                    <div style="position: relative;"><img src="./images/dollar-symbol_25228.png"><a href="./shop.html"><span></span></a>sklepy</div>
+                <div id="view_header_div1"><img src="./images/metalic-logo.png"><div>MANAGER HODOWLI</div><aside><img src="images/facebook.svg">nasz profil</aside></div>
+                <div id="view_header_div2">
+                    <div style="position: relative;" class="page_tag"><img src="./images/home.png"><a href="./index.html"><span></span></a>start<aside class="hidden" name="tags">start</aside></div>
+                    <div style="position: relative;" class="page_tag"><img src="./images/test-pet.svg"><a href="./guestsanimals.html"><span></span></a>nasi podopieczni<aside class="hidden" name="tags">nasi podopieczni</aside></div>
+                    <div style="position: relative;" class="page_tag"><img src="./images/test-pet.svg"><a href="./ouranimals.html"><span></span></a>nasze hodowle<aside class="hidden" name="tags">nasze hodowle</aside></div>
+                    <!--<div style="position: relative;"><img src="./images/dollar-symbol_25228.png"><a href="./shop.html"><span></span></a>sklepy</div>-->
+                    <div style="position: relative;" class="page_tag"><img src="./images/phone.png"><a href="./contact.html"><span></span></a>kontakt<aside class="hidden" name="tags">kontakt</aside></div>
                 </div>
-            </header>
+              </header>
             <section id="view_section">
                 <div>
                     <span>Napisz do nas</span>
-                    <form onsubmit="Send()">
-                        <label>Email:<input type="text" id="email"></label>
-                        <label>Nazwisko:<input type="text"></label>
-                        <label>Temat:<input type="text" id="subject"></label>
-                        <label>Wiadomość:<textarea id="message"></textarea></label>
+                    <form action="https://formspree.io/f/xjvqrgjv" method="post">
+                        <label>Email:<input name="email" id="email" type="email"></label>
+                        <label>Imię i Nazwisko:<input type="text" name="name"></label>
+                        <label>Temat:<input type="text" id="subject" name="subject"></label>
+                        <label>Wiadomość:<textarea name="message"></textarea></label>
                         <label><input type="submit" value="Wyślij"></label>
                     </form>
-                    <script>
-                        function Send(){
-                            console.log("AAAAAAAAAA");
-                            Email.send({
-                                Host : "smtp.gmail.com",
-                                Username : "joannazubik777@gmail.com",
-                                Password : "password",
-                                To : 'joasiazubik@gmail.com',
-                                From : document.getElementById("email").value,
-                                Subject : document.getElementById("subject").value,
-                                Body : document.getElementById("message").value
-                            }).then(
-                                message => alert(message)
-                            ).catch(
-                                error => console.log("Wystąpił błąd:", error)
-                            );
-                        }
-                    </script>
                 </div>
                 <div class="line" style="width: 100vw; margin-top: 30px;"><img src="./images/line2.png" style="width: 100vw;"></div>
                 <div>
                     <span>Inna forma kontaktu</span>
-                    <h3>numer telefonu - 000 000 000</h3>
+                    <!--<h3>numer telefonu - 000 000 000</h3>-->
                 </div>
             </section>
             <footer id="view_footer">
