@@ -114,7 +114,7 @@ button:hover {
     display: flex;
 }
 #view_header div:nth-child(2) div{
-    width: 25vw;
+    width: 33vw;
     height: 50px;
     display: flex;
     background-color: #faa916;
