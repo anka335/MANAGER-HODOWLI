@@ -17,35 +17,31 @@
         <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
     <body>
-        <main id="view_main">
-            <header id="view_header">
-                <div><a href="index.html"><img src="./images/metalic-logo.png" alt="logo"></a><div>MANAGER HODOWLI</div><aside><img src="images/facebook.png" alt="facebook">nasz profil</aside></div>
-                <div>
-                    <div style="position: relative;"><img src="./images/home.png" alt="dom"><a href="./index.html"><span></span></a>start</div>
-                    <div style="position: relative;"><img src="./images/test-pet.png" alt="łapka"><a href="./ouranimals.html"><span></span></a>nasi podopieczni</div>
-                    <div style="position: relative;"><img src="./images/phone.png" alt="telefon"><a href="./contact.html"><span></span></a>kontakt</div>
-                </div>
-            </header>
-            <section id="view_section">
-                <div>
-                    <span><h1>Napisz do nas</h1></span>
-                    <form action="https://formspree.io/f/xjvqrgjv" method="post">
-                        <label>Email:<input name="email" id="email" type="email"></label>
-                        <label>Imię i Nazwisko:<input type="text" name="name"></label>
-                        <label>Temat:<input type="text" id="subject" name="subject"></label>
-                        <label>Wiadomość:<textarea name="message"></textarea></label>
-                        <label><input type="submit" value="Wyślij"></label>
-                    </form>
-                </div>
-                <div class="line" style="width: 100vw; margin-top: 30px;"><img src="./images/line2.png" style="width: 100vw;" alt="linia"></div>
-                <div>
-                    <span><h1>Inna forma kontaktu</h1></span>
-                    <!--<h3>numer telefonu - 000 000 000</h3>-->
-                </div>
-            </section>
-            <footer id="view_footer">
-                <p>patronat - Gabinet Weterynaryjny Radosław Zieliński ul, Kościuszki 114, 62-030 Luboń</p>
-            </footer>
+        <header id="main_header"><a href="index.html"><img src="./images/metalic-logo.png" alt="logo" id="logo"></a><h1>MANAGER HODOWLI</h1><aside><img src="images/facebook.png" alt="facebook" class="icon"><span>nasz profil</span></aside></header>
+        <nav id="main_nav">
+            <div><a href="./index.html"><img src="./images/home.png" alt="dom" class="icon"><span>start</span></a></div>
+            <div><a href="./ouranimals.html"><img src="./images/test-pet.png" alt="łapka" class="icon"><span>nasi podopieczni</span></a></div>
+            <div><a href="./contact.html"><img src="./images/phone.png" alt="telefon" class="icon"><span>kontakt</span></a></div>
+        </nav>
+        <main id="main_main">
+            <div>
+                <span><h2>Napisz do nas</h2></span>
+                <form action="https://formspree.io/f/xjvqrgjv" method="post">
+                    <label>Email:<input name="email" id="email" type="email"></label>
+                    <label>Imię i Nazwisko:<input type="text" name="name"></label>
+                    <label>Temat:<input type="text" id="subject" name="subject"></label>
+                    <label>Wiadomość:<textarea name="message"></textarea></label>
+                    <label><input type="submit" value="Wyślij"></label>
+                </form>
+            </div>
+            <div class="line" style="width: 100vw; margin-top: 30px;"><img src="./images/line2.png" style="width: 100vw;" alt="linia"></div>
+            <div>
+                <span><h2>Nasze dane kontaktowe</h2></span>
+                <h3>adres email - managerhodowli@gmail.com</h3>
+            </div>
         </main>
+        <footer id="main_footer">
+            <h3>patronat - Gabinet Weterynaryjny Radosław Zieliński ul, Kościuszki 114, 62-030 Luboń</h3>
+        </footer>
     </body>
 </html>

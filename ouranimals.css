@@ -1,44 +1,93 @@
-#view_main {
+h2 {
+    font-size: 30px;
+    padding: 50px;
+}
+hr {
+    height: 1px;
+    width: 70vw;
+    margin-left: 0;
+    color: black;
+    background-color: black;
+}
+body {
     width: 100vw;
     height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
-
-#view_section {
+#main_main {
     width: 100%;
     height: auto;
     background-color: white;
     padding-bottom: 50px;
     display: flex;
+    flex-direction: column;
     padding-bottom: 200px;
+    align-items: center;
 }
-.main{
-    margin: 20px;
-    padding: 50px;
-    margin-left: 8vw;
+#gallery {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
-div.gallery {
-    margin: 10px;
-    padding: 0;
-    background-color: #faa916;
-    transition: 0.7s;
-    float: left;
-    width: 180px;
+.gallery_dog {
+    display: flex;
+    flex-direction: column;
     height: 320px;
-    display: grid;
-    box-shadow: 9px 9px 5px -6px;
 }
-div.gallery:hover {
-    background-color: #92640f;
+.gallery_dog_name {
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
-div.gallery img {
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-    padding-top: 0;
+.gallery_dog_name img {
+    margin-right: 5px;
+    width: 60px;
+    height: 60px;
 }
-div.desc {
-    padding: 15px;
-    text-align: center;
+.gallery_dog_images{
+    height: 300px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.arrow {
+    transition-duration: 0.7s;
+    cursor: pointer;
+}
+.gallery_dog_images img{
+    height: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.more_images {
+    width: 50px;
+    border: none;
+    background-color: transparent;
+}
+.more_images:hover {
+    color: #585454;
+}
+.more {
+    display: block;
+}
+.less {
+    display: none;
+}
+@media(max-width: 400px){
+    .gallery_dog_images img{
+        height: 150px;
+    }
+    .gallery_dog_images{
+        padding-left: 5px;
+    }
+}
+@media(max-width: 350px){
+    .gallery_dog_images img{
+        height: 120px;
+    }
 }

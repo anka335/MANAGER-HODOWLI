@@ -14,93 +14,176 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+        <script src="dog_gallery.js"></script> 
     </head>
     <body>
-        <main id="view_main">
-          <header id="view_header">
-            <div><a href="index.html"><img src="./images/metalic-logo.png" alt="logo"></a><div>MANAGER HODOWLI</div><aside><img src="images/facebook.png" alt="facebook">nasz profil</aside></div>
-            <div>
-                <div style="position: relative;"><img src="./images/home.png" alt="dom"><a href="./index.html"><span></span></a>start</div>
-                <div style="position: relative;"><img src="./images/test-pet.png" alt="łapka"><a href="./ouranimals.html"><span></span></a>nasi podopieczni</div>
-                <div style="position: relative;"><img src="./images/phone.png" alt="telefon"><a href="./contact.html"><span></span></a>kontakt</div>
+      <header id="main_header"><a href="index.html"><img src="./images/metalic-logo.png" alt="logo" id="logo"></a><h1>MANAGER HODOWLI</h1><aside><img src="images/facebook.png" alt="facebook" class="icon"><span>nasz profil</span></aside></header>
+      <nav id="main_nav">
+        <div><a href="./index.html"><img src="./images/home.png" alt="dom" class="icon"><span>start</span></a></div>
+        <div><a href="./ouranimals.html"><img src="./images/test-pet.png" alt="łapka" class="icon"><span>nasi podopieczni</span></a></div>
+        <div><a href="./contact.html"><img src="./images/phone.png" alt="telefon" class="icon"><span>kontakt</span></a></div>
+      </nav>
+      <main id="main_main">
+        <h2>Galeria naszych podopiecznych</h2>
+        <section id="gallery">
+
+          <div class="gallery_dog">
+            <div class="gallery_dog_name"><img src="images/dog.png"><h4>Andromeda Jatti's Guardian</h4></div>
+            <div class="gallery_dog_images">
+              <img src="images/strzałka-lewo.png" style="height: 20px;" class="arrow arrow_left">
+              <img src="images/nasi podopieczni/Andromeda Jatti's Guardian/1.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Andromeda Jatti's Guardian/2.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Andromeda Jatti's Guardian/3.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Andromeda Jatti's Guardian/4.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Andromeda Jatti's Guardian/5.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Andromeda Jatti's Guardian/6.jpg" class="dog_image">
+              <img src="images/strzałka.png" style="height: 20px;" class="arrow arrow_right">
             </div>
-        </header>
-            <section id="view_section">
-                <div class="main">
-                  <div class="gallery">
-                    <a target="_blank" href="images/nasi podopieczni/1.jpg">
-                        <img src="images/nasi podopieczni/6.jpg" alt="czarny terier rosyjski" style="width: 180px">
-                    </a>
-                    <div class="desc">Lenka, Luboń</div>
-                </div>
-          
-                <div class="gallery">
-                  <a target="_blank" href="images/nasi podopieczni/1.jpg">
-                    <img src="images/nasi podopieczni/1.jpg" alt="czarny terier rosyjski" style="width: 180px">
-                  </a>
-                  <div class="desc">Lenka, Luboń</div>
-                </div>
+            <button class="more_images" value="on">więcej...</button>
+          </div>
+          <hr>
 
-                <div class="gallery">
-                  <a target="_blank" href="images/nasi podopieczni/12.jpg">
-                    <img src="images/nasi podopieczni/12.jpg" alt="czarny terier rosyjski" style="width: 180px">
-                  </a>
-                  <div class="desc">Lenka, Luboń</div>
-                </div>
-          
-                <div class="gallery">
-                  <a target="_blank" href="images/nasi podopieczni/10.jpg">
-                    <img src="images/nasi podopieczni/10.jpg" alt="czarny terier rosyjski" style="width: 180px">
-                  </a>
-                  <div class="desc">Lenka, Luboń</div>
-                </div>
-          
-                <div class="gallery">
-                  <a target="_blank" href="images/nasi podopieczni/5.jpg">
-                    <img src="images/nasi podopieczni/5.jpg" alt="bulterier" style="width: 180px">
-                  </a>
-                  <div class="desc">Mela, Luboń</div>
-                </div>
+          <div class="gallery_dog">
+            <div class="gallery_dog_name"><img src="images/pieso pomarańczowy.png"><h4>Masimo</h4></div>
+            <div class="gallery_dog_images">
+              <img src="images/strzałka-lewo.png" style="height: 20px;" class="arrow arrow_left">
+              <img src="images/nasi podopieczni/Masimo/1.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Masimo/2.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Masimo/3.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Masimo/4.jpg" class="dog_image">
+              <img src="images/strzałka.png" style="height: 20px;" class="arrow arrow_right">
+            </div>
+            <button class="more_images" value="on">więcej...</button>
+          </div>
+          <hr>
 
-                <div class="gallery">
-                    <a target="_blank" href="images/nasi podopieczni/9.jpg">
-                      <img src="images/nasi podopieczni/9.jpg" alt="samojed" style="width: 180px">
-                    </a>
-                    <div class="desc">Carrie, Luboń</div>
-                  </div>
+          <div class="gallery_dog">
+            <div class="gallery_dog_name"><img src="images/pieso szary.png"><h4>Barbie Betti su Fci</h4></div>
+            <div class="gallery_dog_images">
+              <img src="images/strzałka-lewo.png" style="height: 20px;" class="arrow arrow_left">
+              <img src="images/nasi podopieczni/Barbie Betti su Fci/1.jpg" class="dog_image">
+              <img src="images/strzałka.png" style="height: 20px;" class="arrow arrow_right">
+            </div>
+          </div>
+          <hr>
 
-                  <div class="gallery">
-                    <a target="_blank" href="images/nasi podopieczni/8.jpg">
-                      <img src="images/nasi podopieczni/8.jpg" alt="samojed" style="width: 180px">
-                    </a>
-                    <div class="desc">Carrie, Luboń</div>
-                  </div>
-            
-                  <div class="gallery">
-                    <a target="_blank" href="images/nasi podopieczni/13.jpg">
-                      <img src="images/nasi podopieczni/13.jpg" alt="golden retriever" style="width: 180px">
-                    </a>
-                    <div class="desc">Morris, Luboń</div>
-                  </div>
-                  
-                <div class="gallery">
-                  <a target="_blank" href="images/nasi podopieczni/2.jpg">
-                    <img src="images/nasi podopieczni/2.jpg" alt="golden retriever" style="width: 180px">
-                  </a>
-                  <div class="desc">Morris, Luboń</div>
-                </div>
+          <div class="gallery_dog">
+            <div class="gallery_dog_name"><img src="images/dog.png"><h4>Didi Corso Doro</h4></div>
+            <div class="gallery_dog_images">
+              <img src="images/strzałka-lewo.png" style="height: 20px;" class="arrow arrow_left">
+              <img src="images/nasi podopieczni/Didi Corso Doro/1.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Didi Corso Doro/2.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Didi Corso Doro/3.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Didi Corso Doro/4.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Didi Corso Doro/5.jpg" class="dog_image">
+              <img src="images/strzałka.png" style="height: 20px;" class="arrow arrow_right">
+            </div>
+            <button class="more_images" value="on">więcej...</button>
+          </div>
+          <hr>
 
-                  <div class="gallery">
-                    <a target="_blank" href="images/nasi podopieczni/14.jpg">
-                      <img src="images/nasi podopieczni/14.jpg" alt="golden retriever" style="width: 180px">
-                    </a>
-                    <div class="desc">Morris, Luboń</div>
-                  </div>
-                  </div>
-            </section>
-            <footer id="view_footer">
-                <p>patronat - Gabinet Weterynaryjny Radosław Zieliński ul, Kościuszki 114, 62-030 Luboń</p>
-            </footer>
-        </main>
+          <div class="gallery_dog">
+            <div class="gallery_dog_name"><img src="images/pieso pomarańczowy.png"><h4>Kala</h4></div>
+            <div class="gallery_dog_images">
+              <img src="images/strzałka-lewo.png" style="height: 20px;" class="arrow arrow_left">
+              <img src="images/nasi podopieczni/Kala/1.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Kala/2.jpg" class="dog_image">
+              <img src="images/strzałka.png" style="height: 20px;" class="arrow arrow_right">
+            </div>
+            <button class="more_images" value="on">więcej...</button>
+          </div>
+          <hr>
+
+          <div class="gallery_dog">
+            <div class="gallery_dog_name"><img src="images/pieso szary.png"><h4>Kenzo</h4></div>
+            <div class="gallery_dog_images">
+              <img src="images/strzałka-lewo.png" style="height: 20px;" class="arrow arrow_left">
+              <img src="images/nasi podopieczni/Kenzo/1.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Kenzo/2.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Kenzo/3.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Kenzo/4.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Kenzo/5.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Kenzo/6.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Kenzo/7.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Kenzo/8.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Kenzo/9.jpg" class="dog_image">
+              <img src="images/strzałka.png" style="height: 20px;" class="arrow arrow_right">
+            </div>
+            <button class="more_images" value="on">więcej...</button>
+          </div>
+          <hr>
+
+          <div class="gallery_dog">
+            <div class="gallery_dog_name"><img src="images/dog.png"><h4>Lili Betti su FCI</h4></div>
+            <div class="gallery_dog_images">
+              <img src="images/strzałka-lewo.png" style="height: 20px;" class="arrow arrow_left">
+              <img src="images/nasi podopieczni/Lili Betti su FCI/1.jpg" class="dog_image">
+              <img src="images/strzałka.png" style="height: 20px;" class="arrow arrow_right">
+            </div>
+          </div>
+          <hr>
+
+          <div class="gallery_dog">
+            <div class="gallery_dog_name"><img src="images/pieso pomarańczowy.png"><h4>LUNA Betti su FCI</h4></div>
+            <div class="gallery_dog_images">
+              <img src="images/strzałka-lewo.png" style="height: 20px;" class="arrow arrow_left">
+              <img src="images/nasi podopieczni/LUNA Betti su FCI/1.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/LUNA Betti su FCI/2.jpg" class="dog_image">
+              <img src="images/strzałka.png" style="height: 20px;" class="arrow arrow_right">
+            </div>
+            <button class="more_images" value="on">więcej...</button>
+          </div>
+          <hr>
+
+          <div class="gallery_dog">
+            <div class="gallery_dog_name"><img src="images/pieso szary.png"><h4>Marley Betti su Fci</h4></div>
+            <div class="gallery_dog_images">
+              <img src="images/strzałka-lewo.png" style="height: 20px;" class="arrow arrow_left">
+              <img src="images/nasi podopieczni/Marley Betti su Fci/1.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Marley Betti su Fci/2.jpg" class="dog_image">
+              <img src="images/strzałka.png" style="height: 20px;" class="arrow arrow_right">
+            </div>
+            <button class="more_images" value="on">więcej...</button>
+          </div>
+          <hr>
+
+          <div class="gallery_dog">
+            <div class="gallery_dog_name"><img src="images/dog.png"><h4>Muffinka Betti su FCI</h4></div>
+            <div class="gallery_dog_images">
+              <img src="images/strzałka-lewo.png" style="height: 20px;" class="arrow arrow_left">
+              <img src="images/nasi podopieczni/Muffinka Betti su FCI/1.jpg" class="dog_image">
+              <img src="images/strzałka.png" style="height: 20px;" class="arrow arrow_right">
+            </div>
+          </div>
+          <hr>
+
+          <div class="gallery_dog">
+            <div class="gallery_dog_name"><img src="images/pieso pomarańczowy.png"><h4>Perun Corso Doro</h4></div>
+            <div class="gallery_dog_images">
+              <img src="images/strzałka-lewo.png" style="height: 20px;" class="arrow arrow_left">
+              <img src="images/nasi podopieczni/Perun Corso Doro/1.jpg" class="dog_image">
+              <img src="images/strzałka.png" style="height: 20px;" class="arrow arrow_right">
+            </div>
+          </div>
+          <hr>
+
+          <div class="gallery_dog">
+            <div class="gallery_dog_name"><img src="images/pieso szary.png"><h4>Shakira Betti su FCI</h4></div>
+            <div class="gallery_dog_images">
+              <img src="images/strzałka-lewo.png" style="height: 20px;" class="arrow arrow_left">
+              <img src="images/nasi podopieczni/Shakira Betti su FCI/1.jpg" class="dog_image">
+              <img src="images/nasi podopieczni/Shakira Betti su FCI/2.jpg" class="dog_image">
+              <img src="images/strzałka.png" style="height: 20px;" class="arrow arrow_right">
+            </div>
+            <button class="more_images" value="on">więcej...</button>
+          </div>
+          <hr>
+
+        </section>
+        <a href="https://www.flaticon.com/free-icons/dog" title="dog icons" style="align-self: flex-start; font-size: small; padding-left: 2.5vw;">Dog icons created by Freepik - Flaticon</a>
+      </main>
+      <footer id="main_footer">
+        <h3>patronat - Gabinet Weterynaryjny Radosław Zieliński ul, Kościuszki 114, 62-030 Luboń</h3>
+      </footer>
     </body>
 </html>
