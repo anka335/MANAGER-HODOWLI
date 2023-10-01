@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
+      slideIndex = index+1;
       slides[index].style.width = "100vw";
       dots[index].className += " active";
   
@@ -24,7 +25,69 @@ document.addEventListener('DOMContentLoaded', function() {
         allowShowSlides = true;
         showSlides();
     });
-});
+  });
+
+  let touchstartX = 0
+  let touchendX = 0
+      
+  async function checkDirection() {
+    if (touchendX < touchstartX){
+      //console.log('swiped left!');
+      allowShowSlides = false;
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.width = "0vw";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      if (slideIndex < slides.length){
+        slideIndex += 1;
+      }
+
+      slides[slideIndex-1].style.width = "100vw";
+      dots[slideIndex-1].className += " active";
+  
+      await new Promise(resolve => setTimeout(resolve, 12000));
+  
+        allowShowSlides = true;
+        showSlides();
+    }
+
+
+    if (touchendX > touchstartX){
+      //console.log('swiped right!', slideIndex);
+      allowShowSlides = false;
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.width = "0vw";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      //console.log(slideIndex);
+      if (slideIndex >= 2){
+        //console.log("zmniejszone");
+        slideIndex -= 1;
+      }
+
+      slides[slideIndex-1].style.width = "100vw";
+      dots[slideIndex-1].className += " active";
+  
+      await new Promise(resolve => setTimeout(resolve, 12000));
+  
+        allowShowSlides = true;
+        showSlides();
+    }
+  }
+
+
+  document.addEventListener('touchstart', e => {
+    touchstartX = e.changedTouches[0].screenX
+  })
+
+  document.addEventListener('touchend', e => {
+    touchendX = e.changedTouches[0].screenX
+    checkDirection()
+  })
 
 
   showSlides(); // call showslide method
