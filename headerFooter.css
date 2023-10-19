@@ -24,7 +24,7 @@ h1 {
     font-size: xx-large;
     font-weight: 100;
 }
-h3 {
+h4 {
     font-weight: 100;
     padding-left: 10px;
     padding-right: 10px;
@@ -99,7 +99,7 @@ h3 {
 }
 #main_nav div {
     position: relative;
-    width: 33vw;
+    width: 25vw;
     height: 50px;
     display: flex;
     align-items: center;
@@ -115,12 +115,12 @@ h3 {
 }
 
 @media (min-height: 1200px) {
-    #body {
+    /*#body {
         height: 100vh;
     }
     #main_main {
         height: calc(100vh - 180px);;
-    }
+    }*/
 }
 @media (max-width: 900px) { /*768*/
     * {

@@ -9,19 +9,23 @@
 
 <url>
   <loc>http://managerhodowli.pl/index.html</loc>
-  <lastmod>2023-09-05T16:15:57+00:00</lastmod>
+  <lastmod>2023-10-05T16:15:57+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://managerhodowli.pl/ouranimals.html</loc>
-  <lastmod>2023-09-05T16:15:57+00:00</lastmod>
+  <lastmod>2023-10-05T16:15:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://managerhodowli.pl/contact.html</loc>
-  <lastmod>2023-09-05T16:15:57+00:00</lastmod>
+  <lastmod>2023-10-05T16:15:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>http://managerhodowli.pl/articles.html</loc>
+  <lastmod>2023-10-18T16:15:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>

@@ -139,7 +139,7 @@ button:hover {
     height: 20px;
     display: block;
 }
-.slide:nth-child(2) h4 {
+.slide:nth-child(2) h3 {
     display: block;
     width: 40vw;
     margin-top: 0;
