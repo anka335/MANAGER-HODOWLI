@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let buttons = document.getElementsByTagName("button");
     var buttonArray = Array.from(buttons);
     let arrows = document.getElementsByClassName("arrow");
+    let imagesToShow = document.getElementsByClassName("dog_image");
+    var imagesToShowArray = Array.from(imagesToShow).slice(1);
     var arrowsArray = Array.from(arrows);
     arrowsArray.forEach(function(element){
             element.classList.add("less");
@@ -26,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         numberOfImgs = 1;
     }
+    let overlay = null;
     
     window.addEventListener("resize", (event) => {
         console.log("ZMIANA WIELKOSC");
@@ -164,6 +167,44 @@ document.addEventListener('DOMContentLoaded', function() {
                     imagesArray[i].classList.remove("more");
                 }
             }
+        });
+    });
+
+    imagesToShowArray.forEach(element => {
+        element.addEventListener("click", function(){
+            console.log("kliknales obrazek ", element);
+            let imageSrc = element.getAttribute('src');
+            if (overlay) {
+                overlay.remove(); // Usuń istniejący overlay, jeśli istnieje
+            }
+    
+            overlay = document.createElement('div');
+            overlay.classList.add('overlay');
+            let closeButton = document.createElement('button');
+            closeButton.textContent = 'X';
+            closeButton.classList.add('close-button');
+            overlay.appendChild(closeButton);
+    
+            let overlayImage = document.createElement('img');
+            overlayImage.src = imageSrc;
+            overlayImage.classList.add('overlay-image');
+            overlay.appendChild(overlayImage);
+            document.body.appendChild(overlay);
+            document.body.style.overflow = 'hidden';
+    
+            overlay.addEventListener('click', function (event) {
+                if (event.target === overlay) {
+                    document.body.style.overflow = 'auto';
+                    overlay.remove();
+                    overlay = null; // Ustaw overlay z powrotem na null, gdy jest zamykany
+                }
+            });
+    
+            closeButton.addEventListener('click', function () {
+                document.body.style.overflow = 'auto';
+                overlay.remove();
+                overlay = null; // Ustaw overlay z powrotem na null, gdy jest zamykany
+            });
         });
     });
 });
