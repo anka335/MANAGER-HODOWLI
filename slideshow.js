@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
       slides[index].style.width = "100vw";
       dots[index].className += " active";
   
-      await new Promise(resolve => setTimeout(resolve, 12000));
+      await new Promise(resolve => setTimeout(resolve, 15000));
   
         allowShowSlides = true;
         showSlides();
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
       slides[slideIndex-1].style.width = "100vw";
       dots[slideIndex-1].className += " active";
   
-      await new Promise(resolve => setTimeout(resolve, 12000));
+      await new Promise(resolve => setTimeout(resolve, 15000));
   
         allowShowSlides = true;
         showSlides();
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
       slides[slideIndex-1].style.width = "100vw";
       dots[slideIndex-1].className += " active";
   
-      await new Promise(resolve => setTimeout(resolve, 12000));
+      await new Promise(resolve => setTimeout(resolve, 15000));
   
         allowShowSlides = true;
         showSlides();

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <title>Manager Hodowli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Usługi weterynaryjne w zakresie prowadzenia hodowli psów. Prowadzenie ciąży - wywoływanie rui, optymalny czas na zapłodnienie, inseminacja, poród, laktacja. Utrzymanie psa reproduktora. Znalezienie szczeniaka. Prawidłowy rozwój szczeniąt. Porady dietetyczne. Karmy weterynaryjne. Indywidualne konsultacje online i telefoniczne.">
+    <meta name="keywords" content="psy, hodowla, szczenięta, ciąża">
+    <meta name="robots" content="index">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap_index.xml">
+    <link rel="icon" href="./images/metalic-logo.png">
+    <link rel="stylesheet" href="headerFooter.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="canonical" href="https://managerhodowli.pl">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <script src="shop.js"></script>
+</head>
+<body>
+    <header id="main_header">
+        <a href="index.html"><img src="./images/metalic-logo.png" alt="logo" id="logo"></a>
+        <h1>MANAGER HODOWLI</h1>
+        <aside><img src="images/facebook.png" alt="facebook" class="icon"><span>nasz profil</span></aside>
+    </header>
+
+    <nav id="main_nav">
+        <div><a href="./index.html"><img src="./images/home.png" class="icon"><span>start</span></a></div>
+        <div><a href="./ouranimals.html"><img src="./images/test-pet.png" class="icon"><span>nasi podopieczni</span></a></div>
+        <div><a href="./articles.html"><img src="./images/book.png" class="icon"><span>artykuły</span></a></div>
+        <div><a href="./contact.html"><img src="./images/phone.png" class="icon"><span>kontakt</span></a></div>
+        <div><a href="./shop.html"><img src="./images/dollar-symbol_25228.png" class="icon"><span>sklep</span></a></div>
+    </nav>
+
+    <main id="main_main">
+        <div id="overlay"></div>
+        <div id="modal">
+            <span id="close-btn">&times;</span>
+            <h2 id="cart_h2">Koszyk</h2>
+            <div id="table_headers"><span><h3>produkty</h3></span><span><h3>ilość</h3></span></div>
+            <div id="no_products" style="display: none; padding-top: 10px; padding-bottom: 10px;">nie wybrałeś żadnych produktów</div>
+            <div id="table-container">
+                <table>
+                </table>
+            </div>
+            <form action="mailto:managerhodowli@gmail.com?subject=Zapytanie o produkty" method="post" enctype="text/plain">
+                <textarea name="produkty" id="body" hidden></textarea>
+                <input type="submit" value="Zapytaj" id="submit_btn">
+            </form>
+        </div>
+
+        <section id="products_header">
+            <h2 id="products_h2">Zapytaj o produkty</h2>
+            <img src="images/wozek.png" width="35px" id="cart">
+            <span id="cart-count" hidden></span>
+        </section>
+
+
+            <section id="products">
+                <div>
+                    <img src="images/karmy/happy-snacky-miekki-filet-z-kaczki.JPG">
+                    <span name="product_text">Happy Snacky miękki filet z kaczki</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/happy-snacky-NAPSANOSY-kabanosy-z-kangura.jpg">
+                    <span name="product_text">Happy Snacky NAPSANOSY z kangura</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/happy-snacky-NAPSANOSY-kabanosy-ze-strusia.jpg">
+                    <span name="product_text">Happy Snacky NAPSANOSY ze strusia</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/happy-snacky-NAPSANOSY-z-koniny.JPG">
+                    <span name="product_text">Happy Snacky NAPSANOSY z koniny</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/happy-snacky-nasze-susze-skora-jelenia.jpg">
+                    <span name="product_text">Happy Snacky nasze susze skóra z jelenia</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/happy-snacky-nasze-susze-skora-wolowa.jpeg">
+                    <span name="product_text">Happy Snacky nasze susze skóra wołowa</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/happy-snacky-nasze-susze-ucho-wolowe-z-malzowina.JPG">
+                    <span name="product_text">Happy Snacky nasze susze ucho wołowe z małżowiną</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/happy-snacky-palka-wedzona-z-jagniecina.png" width="190px">
+                    <span name="product_text">Happy Snacky pałka wędzona z jagnięciną</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/happy-snacky-palka-wolowa-z-kaczka.JPG">
+                    <span name="product_text">Happy Snacky pałka wołowa z kaczką</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/happy-snacky-tchawica-wolowa.jpg">
+                    <span name="product_text">Happy Snacky tchawica wołowa</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/happy-snacky-ucho-wieprzowe-biale-z-malzowina.JPG" width="190px">
+                    <span name="product_text">Happy Snacky ucho wieprzowe białe z małżowiną</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/happy-snacky-ucho-wieprzowe-wedzone.JPG">
+                    <span name="product_text">Happy Snacky nasze susze ucho wieprzowe wędzone</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/ROYAL-CANIN-Maxi-Puppy-karma-mokra-w-sosie-dla-szczeniat-do-15-miesiaca-zycia-ras-duzych.jpeg">
+                    <span name="product_text">Royal Canin Maxi Puppy karma mokra w sosie dla szczeniąt do 15 miesiąca ras dużych</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/ROYAL-CANIN-Maxi-Puppy-karma-sucha-dla-szczeniat-od-2-do-15-miesiaca-zycia-ras-duzych.jpeg">
+                    <span name="product_text">Royal Canin Maxi Puppy karma sucha dla szczeniąt od 2 do 15 miesiąca ras dużych</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/ROYAL-CANIN-Medium-Puppy-karma-mokra-w-sosie-dla-szczeniat-do-12-miesiąca-ras-srednich.jpeg">
+                    <span name="product_text">Royal Canin Medium Puppy karma mokra w sosie dla szczeniąt do 12 miesiąca ras średnich</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+
+                <div>
+                    <img src="images/karmy/ROYAL-CANIN-Medium-Puppy-karma-sucha-dla-szczeniat-od-2-do-12 miesiaca-ras-srednich.jpeg">
+                    <span name="product_text">Royal Canin Maxi Puppy karma sucha dla szczeniąt od 2 do 12 miesiąca ras średnich</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/ROYAL-CANIN-Mini-Puppy-karma-mokra-w-sosie-dla-szczeniat-do-10-miesiaca-ras-malych.jpeg">
+                    <span name="product_text">Royal Canin Mini Puppy karma mokra w sosie dla szczeniąt do 10 miesiąca ras małych</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+                <div>
+                    <img src="images/karmy/ROYAL-CANNIN-Mini-Puppy.jpeg">
+                    <span name="product_text">Royal Canin Mini Puppy</span>
+                    <input type="number" min="0" max="10" value="0">
+                    <button>Dodaj</button>
+                </div>
+            </section>
+        </main>
+        <footer id="main_footer">
+            <p>patronat - Gabinet Weterynaryjny Radosław Zieliński ul, Kościuszki 114, 62-030 Luboń</p>
+        </footer>
+    </body>
+</html>
