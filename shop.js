@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Ustawienie treści wiadomości w polu body formularza
         var form = document.querySelector('form');
         form.elements.body.value = cartInfo;
-        emailjs.sendForm('contact_service', 'contact_form', this)
+        emailjs.sendForm('service_cv04apn', 'template_5k6ksfg', this)
             .then(() => {
                 console.log('SUCCESS!');
             }, (error) => {
