@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Zamiana spacji na znaki plus
-        cartInfo = cartInfo.split(' ').join('+');
+        cartInfo = cartInfo.split(' ').join(' ');
 
         // Ustawienie treści wiadomości w polu body formularza
         var str = "";
