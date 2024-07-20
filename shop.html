@@ -15,6 +15,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="canonical" href="https://managerhodowli.pl">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "10H0uh6SyCuM0fhOx",
+            });
+        })();
+    </script>
     <script src="shop.js"></script>
 </head>
 <body>
@@ -43,7 +52,7 @@
                 <table>
                 </table>
             </div>
-            <form action="mailto:managerhodowli@gmail.com?subject=Zapytanie o produkty" method="post" enctype="text/plain">
+            <form action="mailto:managerhodowli@gmail.com?subject=Zapytanie o produkty" method="post" enctype="text/plain" id="contact_form">
                 <textarea name="produkty" id="body" hidden></textarea>
                 <input type="submit" value="Zapytaj" id="submit_btn">
             </form>

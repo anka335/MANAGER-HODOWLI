@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Dodajemy event listener dla przycisku submit_btn
-    document.getElementById('submit_btn').addEventListener('click', function (event) {
+    document.getElementById('contact_form').addEventListener('submit', function (event) {
         event.preventDefault(); // Zapobieganie domyślnej akcji formularza (przeładowaniu strony)
 
         // Zmienna przechowująca informacje o produktach w koszyku
@@ -222,9 +222,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Ustawienie treści wiadomości w polu body formularza
         var form = document.querySelector('form');
         form.elements.body.value = cartInfo;
-
-        // Wysłanie formularza
-        form.submit();
+        emailjs.sendForm('contact_service', 'contact_form', this)
+            .then(() => {
+                console.log('SUCCESS!');
+            }, (error) => {
+                console.log('FAILED...', error);
+            });
     });
 
 });
