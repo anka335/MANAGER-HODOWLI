@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Dodajemy event listener dla przycisku submit_btn
     document.getElementById('contact_form').addEventListener('submit', function (event) {
-        event.preventDefault(); // Zapobieganie domyślnej akcji formularza (przeładowaniu strony)
+        //event.preventDefault(); // Zapobieganie domyślnej akcji formularza (przeładowaniu strony)
 
         // Zmienna przechowująca informacje o produktach w koszyku
         var cartInfo = '';
