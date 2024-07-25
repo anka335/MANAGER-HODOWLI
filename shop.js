@@ -225,9 +225,11 @@ document.addEventListener("DOMContentLoaded", function () {
         emailjs.sendForm('service_cv04apn', 'template_5k6ksfg', this)
             .then(() => {
                 console.log('SUCCESS!');
+                alert('Twoje zamówienie zostało pomyślnie przesłane. Wkrótce skontaktujemy się z Tobą mailowo w celu ustalenia dalszych kroków. Sprawdź swoją skrzynkę pocztową - wiadomość została wysłana na podany adres e-mail.')
             }, (error) => {
                 console.log('FAILED...', error);
             });
+        
     });
 
 });
