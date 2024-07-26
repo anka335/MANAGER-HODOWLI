@@ -36,6 +36,13 @@ document.addEventListener("DOMContentLoaded", function () {
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~add product~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     var addToCartButtons = document.querySelectorAll("button");
 
+    function clearCart() {
+        cartItems = {};
+        setCartToLocalStorage(cartItems);
+        updateCartTable();
+        updateCartCount();
+    }
+
     addToCartButtons.forEach(function (button) {
         button.addEventListener("click", function () {
             var productContainer = button.closest("div");
@@ -229,8 +236,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert('Twoje zamówienie zostało pomyślnie przesłane. Wkrótce skontaktujemy się z Tobą mailowo w celu ustalenia dalszych kroków. Sprawdź swoją skrzynkę pocztową - wiadomość została wysłana na podany adres e-mail.')
             }, (error) => {
                 console.log('FAILED...', error);
+                alert('Wystąpił nieoczekiwany błąd. Wróć później lub skontaktuj się z nami mailowo.')
             });
-        
+        clearCart();
     });
 
 });
