@@ -109,7 +109,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 var inputQuantity = document.createElement("input");
                 inputQuantity.type = "number";
                 inputQuantity.min = "0";
-                inputQuantity.max = "10";  
+                inputQuantity.max = "10";
+                inputQuantity.readOnly = true;
                 inputQuantity.value = cartItems[product];
                 inputQuantity.addEventListener("input", function (currentProduct) {
                     return function () {
