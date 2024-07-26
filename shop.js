@@ -177,6 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('contact_form').addEventListener('submit', function (event) {
         event.preventDefault(); // Zapobieganie domyślnej akcji formularza (przeładowaniu strony)
 
+        closeModal();
         // Zmienna przechowująca informacje o produktach w koszyku
         var cartInfo = '';
 
