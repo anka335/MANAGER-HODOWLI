@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (Object.keys(cartItems).length === 0) {
             var emptyRow = table.insertRow(-1);
             var emptyCell = emptyRow.insertCell(0);
-            emptyCell.textContent = "Brak produktów w koszyku";
+            emptyCell.textContent = " ";
             return;
         }
 
@@ -137,18 +137,21 @@ document.addEventListener("DOMContentLoaded", function () {
         var title = document.getElementById("table_headers");
         var noProducts = document.getElementById("no_products");
         var submitBtn = document.getElementById("submit_btn");
+        var emailInput = document.getElementById("email_input");
         // Sprawdź, czy koszyk jest pusty
         if (Object.keys(cartItems).length === 0) {
             //koszyk jest pusty
             title.style.display = "none"; // Ukryj tytuł
             noProducts.style.display = "block";
             submitBtn.style.visibility = "hidden";
+            emailInput.style.visibility = "hidden";
             return;
         }
         
         title.style.display = "flex"; // Pokaż tytuł
         noProducts.style.display = "none";
         submitBtn.style.visibility = "visible";
+        emailInput.style.visibility = "visible";
 
         var isEmpty = true; // Zmienna informująca o tym, czy koszyk jest pusty
     
@@ -165,11 +168,13 @@ document.addEventListener("DOMContentLoaded", function () {
             title.style.display = "none"; // Ukryj tytuł
             noProducts.style.display = "block";
             submitBtn.style.visibility = "hidden";
+            emailInput.style.visibility = "hidden";
         } else {
             // Koszyk nie jest pusty, pokaż tytuł
             title.style.display = "flex"; // Pokaż tytuł
             noProducts.style.display = "none";
             submitBtn.style.visibility = "visible";
+            emailInput.style.visibility = "visible";
         }        
         
     }
